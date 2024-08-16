@@ -30,7 +30,7 @@
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between; /* Adjusted to create space at the bottom */
         }
         .card img {
             width: 100px;
@@ -74,6 +74,17 @@
         .card .button:hover {
             background-color: #0056b3;
         }
+        .bottom-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .bottom-icons img {
+            width: 24px; /* Reduced size */
+            height: 24px; /* Reduced size */
+            cursor: pointer;
+        }
         @media (max-width: 400px) {
             .card {
                 height: auto;
@@ -83,13 +94,28 @@
 </head>
 <body>
     <div class="card">
-        <img src="profile.jpg" alt="Rahul Retnakumar's Profile Picture">
-        <h1>RAHUL RETNAKUMAR</h1>
-        <p class="title">Software Engineer</p>
-        <p class="contact">Email: rahulretnakumar@gmail.com</p>
-        <p class="contact">Phone: 7736392911</p>
-        <a href="tel:+917736392911" class="button" aria-label="Click to call Rahul Retnakumar">Click to Call</a>
-          <button class="button" onclick="downloadVCF()">Download Contact</button>
+        <div>
+            <img src="profile.jpg" alt="Rahul Retnakumar's Profile Picture">
+            <h1>RAHUL RETNAKUMAR</h1>
+            <p class="title">contact</p>
+            <p class="contact">Email: rahulretnakumar@gmail.com</p>
+            <p class="contact">Phone: 7736392911</p>
+            <a href="tel:+917736392911" class="button" aria-label="Click to call Rahul Retnakumar">Click to Call</a>
+        </div>
+
+        <button class="button" onclick="downloadVCF()">Download Contact</button>
+
+        <div class="bottom-icons">
+            <a href="https://www.instagram.com/your_instagram_handle" target="_blank">
+                <img src="instagram-logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/your_linkedin_profile" target="_blank">
+                <img src="linkedin-logo.png" alt="LinkedIn">
+            </a>
+            <a href="https://wa.me/your_whatsapp_number" target="_blank">
+                <img src="whatsapp-logo.png" alt="WhatsApp">
+            </a>
+        </div>
     </div>
 
     <script>
