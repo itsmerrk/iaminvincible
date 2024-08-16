@@ -11,10 +11,10 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            background-image: url('background-image.jpg'); /* Add your background image path */
-            background-size: cover; /* Cover the entire page */
+            background-image: url('background-image.jpg'); /* Path to your background image */
+            background-size: cover; /* Ensure the image covers the entire page */
             background-position: center; /* Center the background image */
-            background-repeat: no-repeat; /* Prevent repeating the image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,9 +25,12 @@
         .card {
             width: 100%;
             max-width: 350px;
-            height: 600px; /* Fixed height for portrait mode */
+            height: auto; /* Adjust height based on content */
             padding: 20px;
-            background-color: #ffffff;
+            background-image: url('card-background.jpg'); /* Path to the card's background image */
+            background-size: cover; /* Ensure the card's background image covers the entire card */
+            background-position: center; /* Center the card's background image */
+            background-repeat: no-repeat; /* Prevent the card's background image from repeating */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -50,18 +53,19 @@
             font-size: 24px;
             margin: 10px 0;
             text-transform: uppercase;
+            color: #ffffff; /* Text color for contrast */
         }
         .card p {
             margin: 5px 0;
-            color: #555;
+            color: #dddddd; /* Text color for contrast */
         }
         .card .title {
             font-size: 18px;
-            color: #333;
+            color: #ffffff; /* Text color for contrast */
         }
         .card .contact {
             font-size: 14px;
-            color: #777;
+            color: #dddddd; /* Text color for contrast */
         }
         .card .button {
             margin-top: 20px;
@@ -69,7 +73,7 @@
             background-color: #007bff;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 20px;
             text-decoration: none;
             font-size: 16px;
             cursor: pointer;
